@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CodeMirror RunMode Highlighting Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/lib/codemirror.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/addon/runmode/runmode-standalone.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/mode/python/python.min.js"></script>
+  </head>
+  <body>
+    <pre><code id="python_code">def func(A):
+    result = 0
+    n = len(A)
+    while n > 1:
+        n = n/2
+        result = result + min(A[1,...,n])
+    return result</code></pre>
+    <script type="text/javascript">
+        window.onload = function(){
+            var codeElement = document.getElementById('python_code');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement.classList.add( 'cm-s-default' );
+            var code = codeElement.innerText;
+
+            codeElement.innerHTML = "";
+
+            CodeMirror.runMode(
+              code,
+              'python',
+              codeElement
+            );
+        };
+    </script>
+  </body>
+</html>
