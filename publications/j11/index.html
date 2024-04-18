@@ -10,15 +10,12 @@
 		<title>Publications</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../../../../assets/css/main.css" />
-		<link rel="stylesheet" href="../../../../assets/css/academicons.min.css"/>
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="stylesheet" href="../../assets/css/academicons.min.css"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 	    <!-- Bootstrap -->
-	    <link href="../../../../assets/css/bootstrap-4.4.1.css" rel="stylesheet">
+	    <link href="../../assets/css/bootstrap-4.4.1.css" rel="stylesheet">
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/lib/codemirror.min.css">
-	    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/addon/runmode/runmode-standalone.min.js"></script>
-	    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/mode/python/python.min.js"></script>
 
 	</head>
 	<body class="is-preload">
@@ -117,64 +114,6 @@
 							          <p class="text-left"> Double-I built-up sections were extensively used in Iran according to the previous versions of Iranian building codes. Despite the recent developments in steel moment connections, based on studies for I-beam to H-shaped column connections, there are not enough documents available for I-beam to double-I built-up column connections. Recent studies have revealed that connections with double-I built-up columns exhibit different behaviors comparing to the connections with H-shaped columns. Due to excessive out-of-plane deformations of the cover plate in the non-retrofitted moment connections, they have semi-rigid behavior. The objective of this study is to build on previous studies and to investigate strain distribution pattern and load transfer mechanism in the retrofitted I-beam to double-I built-up column connections using through plates and T-stiffeners. In this paper, both horizontal and vertical elements of the T-stiffeners were modified and studied. Analytical models were designed and analyzed under cyclic and monotonic loadings. Three different indices were computed in the connection region in order to assess the local failure potential; and the moment-rotation hysteretic curves were employed to evaluate the seismic performance of the connections. With the proposed configurations, strain is uniformly distributed within the critical elements. Moreover, excessive deformations of the column cover plate are eliminated.
  </p>
 							        </div>
-
-
-   <pre><code id="python_code">
-
-
-import glob
-import json
-from src import CreateCocoFormatInstances as COCO
-
-subsets = ["png"]
-
-
-for subset in subsets:
-    ##############################################################################
-    my_coco = COCO()  # create an instance of the class CreateCocoFormat()
-    my_coco.load_categories()  # load categories from images_info.json
-
-    for mask_image in glob.glob(f"BW/{subset}/*.png"):
-        print('|', end='')
-        my_coco.create_annotations(mask_image)  # create annotations from masks
-        my_coco.cache_image_id += 1
-
-
-    ##############################################################################
-    # save the coco format
-    print('|', end='\n')
-    with open(f"instances_{subset}2017.json", 'w') as f:
-        json.dump(my_coco.coco_instance, f)
-    with open(f"panoptic_{subset}2017.json", 'w') as f:
-        json.dump(my_coco.coco_panoptic, f)
-
-        print("Created %d annotations for '%s' images in folder" % (my_coco.cache_image_id, subset))
-        if my_coco.cache_image_id == 0:
-            print("No annotations created!")
-
-
-
-
-</code></pre>
-    <script type="text/javascript">
-        window.onload = function(){
-            var codeElement = document.getElementById('python_code');
-            // Add code mirror class for coloring (default is the theme)
-            codeElement.classList.add( 'cm-s-default' );
-            var code = codeElement.innerText;
-
-            codeElement.innerHTML = "";
-
-            CodeMirror.runMode(
-              code,
-              'python',
-              codeElement
-            );
-        };
-    </script>
-
-
-
 							      </div>
 							    </div>
 							  </section>
