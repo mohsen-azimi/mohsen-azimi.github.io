@@ -292,7 +292,7 @@ def update_pulications_list(publication_previews):
     
                                 <!-- Header -->
                                     <header id="header">
-                                        <a href="https://mohsen-azimi.github.io/publications/" class="logo"><strong>Publications</strong></a>
+                                        <a href="https://mohsen-azimi.github.io/" class="logo"><i class="fas fa-home"></i> <strong>Publications</strong></a>
                                         <ul class="icons">
                                             <li><a href="https://mohsen-azimi.github.io" class="icon brands fa-home"><span class="label">Home</span></a></li>
                                             <li><a href="https://www.linkedin.com/in/mohsenazimi/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
