@@ -1,0 +1,27 @@
+{
+	"name": "j10",
+	"authors":{
+		"Armin Dadras Eslamlou": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Ali Kaveh": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Mohsen Azimi": {"affiliation":1,
+					"website":" ",
+					"email":" "},
+		"T.Y. Yang": {"affiliation":1,
+					"website":" ",
+					"email":" "}
+		},
+	"affiliations": ["Department of Civil Engineering, Iran University of Science and Technology, Tehran 13114-16846, Iran", "Department of Civil and Environmental Engineering, University of Nevada, Reno, NV 89557, USA"],
+	"title": "Structural health monitoring via a group-theoretic WSA for optimal feature selection and data fusion",
+	"journal": "Structures",
+	"doi": " https://doi.org/10.1016/j.istruc.2023.105280",
+	"url": "https://www.sciencedirect.com/science/article/pii/S2352012423013681",
+	"code_url": "#",
+	"supplementary_url": "#",
+	"abstract": "In this study, two binary versions of the Water Strider Algorithm (WSA) are proposed and applied to optimal feature selection in classification problems. In the new binary versions, the formulations of WSA in continuous space are converted into binary space using group-theoretic operators (in AWSA) and sigmoid function (in BWSA). AWSA, BWSA, genetic algorithm (GA), and binary particle swarm optimization (BPSO) are selected and compared over eighteen well-known datasets from the University of California, Irvine repository. The results of AWSA indicate its satisfactory performance compared to those of other algorithms. Then, they are applied to find optimal features of a structural health monitoring classification problem using two well-known machine learning classifiers, namely k-Nearest Neighbor (KNN) and Naïve Bayes (NB) algorithms. To further improve the accuracy of the classification models, a decision-level data fusion technique is proposed based on the improved Dempster-Shafer theory. It is demonstrated that the AWSA presents superior results compared to the other algorithms and the suggested decision-level data fusion provides a reliable detection of damage.",
+	"year": "2023"
+}
+

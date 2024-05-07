@@ -1,0 +1,21 @@
+{
+	"name": "j07",
+	"authors":{
+		"Mohsen Azimi": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Asghar Molaei Yeznabad": {"affiliation":1,
+					"website":" ",
+					"email":" "}
+		},
+	"affiliations": ["Department of Civil and Environmental Engineering, North Dakota State University, Fargo, ND 58105, USA", "Department of Electrical Engineering, University of Mohaghegh Ardabili, Ardabil 56199-11367, Iran"],
+	"title": "Swarm-Based Parallel Control of Adjacent Irregular Buildings Considering Soil–Structure Interaction",
+	"journal": "Journal of Sensor and Actuator Networks",
+	"doi": " https://doi.org/10.3390/jsan9020018",
+	"url": "https://www.mdpi.com/2224-2708/9/2/18",
+	"code_url": "#",
+	"supplementary_url": "#",
+	"abstract": "Seismic behavior of tall buildings depends upon the dynamic characteristics of the structure, as well as the base soil properties. To consider these factors, the equations of motion for a multi-story 3D building are developed to include irregularity and soil–structure interaction (SSI). Inspired by swarm intelligence in nature, a new control method, known as swarm-based parallel control (SPC), is proposed in this study to improve the seismic performance and minimize the pounding hazards, by sharing response data among the adjacent buildings at each floor level, using a wireless-sensors network (WSN). The response of individual buildings is investigated under historic earthquake loads, and the efficiencies of each different control method are compared. To verify the effectiveness of the proposed method, the numerical example of a 15-story, 3D building is modeled, and the responses are mitigated, using semi-actively controlled magnetorheological (MR) dampers employing the proposed control algorithm and fuzzy logic control (FLC), as well as the passive-on/off methods. The main discussion of this paper is the efficiency of the proposed SPC over the independent FLC during an event where one building is damaged or uncontrolled, and an active control based upon the linear quadratic regulator (LQR) is considered for the purpose of having a benchmark ideal result. Results indicate that in case of failure in the control system, as well as the damage in the structural elements, the proposed method can sense the damage in the building, and update the control forces in the other adjacent buildings, using the modified FLC, so as to avoid pounding by minimizing the responses.",
+	"year": "2020"
+}
+

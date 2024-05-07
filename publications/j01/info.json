@@ -1,0 +1,26 @@
+{
+	"name": "j01",
+	"authors":
+		{
+		"Gholamreza Ghodrati Amiri": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+
+		"Mohsen Azimi": {"affiliation":0,
+						"website":"https://mohsen-azimi.github.io/",
+						"email":" "},
+		"Ehsan Darvishan": {"affiliation":0,
+					"website":" ",
+					"email":" "}
+		},
+	"affiliations": ["Center of Excellence for Fundamental Studies in Structural Engineering, School of Civil Engineering, Iran University of Science & Technology, Tehran, Iran."],
+	"title": "Retrofitting I-beam to double-I built-up column connections using through plates and T-stiffeners",
+	"journal": "Scientia Iranica",
+	"doi": " ",
+	"url": "https://scientiairanica.sharif.edu/article_1542.html",
+	"code_url": " ",
+	"supplementary_url": " ",
+	"abstract": "Double-I built-up sections were extensively used in Iran according to the previous versions of Iranian building codes. Despite the recent developments in steel moment connections, based on studies for I-beam to H-shaped column connections, there are not enough documents available for I-beam to double-I built-up column connections. Recent studies have revealed that connections with double-I built-up columns exhibit different behaviors comparing to the connections with H-shaped columns. Due to excessive out-of-plane deformations of the cover plate in the non-retrofitted moment connections, they have semi-rigid behavior. The objective of this study is to build on previous studies and to investigate strain distribution pattern and load transfer mechanism in the retrofitted I-beam to double-I built-up column connections using through plates and T-stiffeners. In this paper, both horizontal and vertical elements of the T-stiffeners were modified and studied. Analytical models were designed and analyzed under cyclic and monotonic loadings. Three different indices were computed in the connection region in order to assess the local failure potential; and the moment-rotation hysteretic curves were employed to evaluate the seismic performance of the connections. With the proposed configurations, strain is uniformly distributed within the critical elements. Moreover, excessive deformations of the column cover plate are eliminated.",
+	"year": "2013"
+}
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb6f19ba-46c3-4c2f-90a4-c8e1ff327606" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/j02/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j03/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j04/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j05/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j06/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j07/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j08/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j09/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j10/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j11/assets/j10.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j11/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2fRkiD6BVui8PuYRSQdnpwFC0YB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb6f19ba-46c3-4c2f-90a4-c8e1ff327606" name="Changes" comment="" />
+      <created>1713771404377</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713771404377</updated>
+      <workItem from="1713771406244" duration="81000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

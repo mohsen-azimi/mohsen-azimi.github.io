@@ -1,0 +1,33 @@
+{
+	"name": "j03",
+	"authors":
+		{
+		"Zhibin Lin": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Fardad Azarmi": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Qusay Al-Kaseasbeh": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Mohsen Azimi": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+
+		"Fei Yan": {"affiliation":0,
+						"website":" ",
+						"email":" "}
+
+		},
+	"affiliations": ["---"],
+	"title": "Advanced ultrasonic testing technologies with applications to evaluation of steel bridge welding-an overview",
+	"journal": "Applied Mechanics and Materials ",
+	"doi": "https://doi.org/10.4028/www.scientific.net/AMM.727-728.785",
+	"url": "https://www.scientific.net/amm.727-728.785",
+	"code_url": "#",
+	"supplementary_url": "#",
+	"abstract": "Non-destructive evaluation (NDE) methods are widely accepted for quality control of welding in steel bridges. Recent development of advanced ultrasonic testing technologies enriched the categories of NDE methods used for steel bridges and more importantly these enhanced techniques provided more effective flaw detection and characterization. No guidelines, however, is available in existing bridge welding code for their more widespread applications to bridges. In this study, we overview the state-of-the-art advanced ultrasonic testing technologies in welding inspection. Benefits of the enhanced ultrasonic testing technologies are summarized, aiming to pave the way for deciding methods need for various steel bridge welding inspections.",
+	"year": "2015"
+}
+

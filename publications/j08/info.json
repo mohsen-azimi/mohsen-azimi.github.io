@@ -1,0 +1,25 @@
+{
+	"name": "j08",
+	"authors":{
+		"Mohsen Azimi": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Armin Dadras Eslamlou": {"affiliation":1,
+					"website":" ",
+					"email":" "},
+		"Gokhan Pekcan": {"affiliation":0,
+					"website":" ",
+					"email":" "}
+
+		},
+	"affiliations": ["Department of Civil and Environmental Engineering, University of Nevada, Reno, NV 89557, USA", "Department of Civil Engineering, Iran University of Science and Technology, Tehran 13114-16846, Iran"],
+	"title": "Data-Driven Structural Health Monitoring and Damage Detection through Deep Learning: State-of-the-Art Review",
+	"journal": "Sensors",
+	"doi": " https://doi.org/10.3390/s20102778",
+	"url": "https://www.mdpi.com/1424-8220/20/10/2778",
+	"code_url": "#",
+	"supplementary_url": "#",
+	"abstract": "Data-driven methods in structural health monitoring (SHM) is gaining popularity due to recent technological advancements in sensors, as well as high-speed internet and cloud-based computation. Since the introduction of deep learning (DL) in civil engineering, particularly in SHM, this emerging and promising tool has attracted significant attention among researchers. The main goal of this paper is to review the latest publications in SHM using emerging DL-based methods and provide readers with an overall understanding of various SHM applications. After a brief introduction, an overview of various DL methods (e.g., deep neural networks, transfer learning, etc.) is presented. The procedure and application of vibration-based, vision-based monitoring, along with some of the recent technologies used for SHM, such as sensors, unmanned aerial vehicles (UAVs), etc. are discussed. The review concludes with prospects and potential limitations of DL-based methods in SHM applications.",
+	"year": "2020"
+}
+

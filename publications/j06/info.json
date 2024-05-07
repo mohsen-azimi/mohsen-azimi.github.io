@@ -1,0 +1,21 @@
+{
+	"name": "j06",
+	"authors":{
+		"Mohsen Azimi": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Gokhan Pekcan": {"affiliation":0,
+					"website":" ",
+					"email":" "}
+		},
+	"affiliations": ["Department of Civil and Environmental Engineering, University of Nevada Reno, Reno, NV, USA"],
+	"title": "Structural health monitoring using extremely compressed data through deep learning",
+	"journal": "Computer‐Aided Civil and Infrastructure Engineering ",
+	"doi": " https://doi.org/10.1111/mice.12517",
+	"url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/mice.12517",
+	"code_url": "#",
+	"supplementary_url": "#",
+	"abstract": "This study introduces a novel convolutional neural network (CNN)-based approach for structural health monitoring (SHM) that exploits a form of measured compressed response data through transfer learning (TL)-based techniques. The implementation of the proposed methodology allows damage identification and localization within a realistic large-scale system. To validate the proposed method, first, a well-known benchmark model is numerically simulated. Using acceleration response histories, as well as compressed response data in terms of discrete histograms, CNN models are trained, and the robustness of the CNN architectures is evaluated. Finally, pretrained CNNs are fine-tuned to be adaptable for three-parameter, extremely compressed response data, based on the response mean, standard deviation, and a scale factor. The performance of each CNN implementation is assessed using training accuracy histories as well as confusion matrices, along with other performance metrics. In addition to the numerical study, the performance of the proposed method is demonstrated using experimental vibration response data for verification and validation. The results indicate that deep TL can be implemented effectively for SHM of similar structural systems with different types of sensors.",
+	"year": "2020"
+}
+

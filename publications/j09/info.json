@@ -1,0 +1,28 @@
+{
+	"name": "j09",
+	"authors":{
+		"Ali Kaveh": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Nima Geran Malek": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Armin Dadras Eslamlou": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Mohsen Azimi": {"affiliation":1,
+					"website":" ",
+					"email":" "}
+
+		},
+	"affiliations": ["Centre of Excellence for Fundamental Studies in Structural Engineering, Iran University of Science and Technology, Tehran, Iran", "Department of Civil Engineering, University of British Columbia, Vancouver, BC, Canada"],
+	"title": "An open-source framework for the FE modeling and optimal design of fiber-steered variable-stiffness composite cylinders using water strider algorithm",
+	"journal": "Mechanics Based Design of Structures and Machines",
+	"doi": " https://doi.org/10.1080/15397734.2020.1835489",
+	"url": "https://www.tandfonline.com/doi/full/10.1080/15397734.2020.1835489",
+	"code_url": "#",
+	"supplementary_url": "#",
+	"abstract": "As the automated fiber placement (AFP) manufacturing technology is developed, curvilinear fiber path composite structures received extensive attention. Therefore, developing a design framework capable of optimizing such structures is a significant challenge for researchers and engineers in this domain. In this article, an open-source ABAQUS/MATLAB-based framework is developed for the bending-induced buckling design of variable-stiffness (VS) composite cylinders made using the AFP method. The framework is based on an interface between ABAQUS FE packages with MATLAB environment using Python scripting language. In this framework, the optimized fiber angle distribution of steered plies and associated bending-induced buckling load of its FE model is obtained by applying a meta-heuristic optimization algorithm. The developed Python script submits dimensions, angle distributions, as well as loading and boundary conditions to ABAQUS/CAE. This framework can be customized to meet industrial demands. To show such flexibility, different types of metaheuristic optimization algorithms and aspect ratios are applied, and the associated problems are optimized separately. In addition to the simplicity and versatility of the proposed framework, the results indicate the higher performance of a novel metaheuristic, the so-called Water Strider Algorithm (WSA). Moreover, this framework can be used for finite element modeling and analysis in the metamodeling step for composite cylinders with higher aspect ratios.",
+	"year": "2023"
+}
+

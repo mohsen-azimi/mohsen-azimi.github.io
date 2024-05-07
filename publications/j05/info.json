@@ -1,0 +1,28 @@
+{
+	"name": "j05",
+	"authors":{
+		"Hong Pan": {"affiliation":0,
+						"website":" ",
+						"email":" "},
+		"Mohsen Azimi": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+
+		"Fei Yan": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Zhibin Lin": {"affiliation":0,
+					"website":" ",
+					"email":" "}
+		},
+	"affiliations": ["Department of Civil and Environmental Engineering, North Dakota State University, Fargo, North Dakota, 58105 USA"],
+	"title": "Time-frequency-based data-driven structural diagnosis and damage detection for cable-stayed bridges",
+	"journal": "Journal of Bridge Engineering ",
+	"doi": " https://doi.org/10.1061/(ASCE)BE.1943-5592.000119",
+	"url": "https://ascelibrary.org/doi/abs/10.1061/(ASCE)BE.1943-5592.0001199",
+	"code_url": "#",
+	"supplementary_url": "#",
+	"abstract": "Dynamic characteristics of cable-stayed bridges are widely accepted as valuable indicators to determine their performance in structural health monitoring (SHM). Although research has been extensively conducted in this area, such vibration-based physics methods still face great challenges in improving the effectiveness of damage identification from complex large-scale systems, particularly when other factors, including operational and environmental conditions, may cause high interference to the vibration response. Data-intensive machine learning techniques have been gaining attention due to their robustness for data classification. In this study, a framework was developed for data-driven structural diagnosis and damage detection using a support vector machine (SVM) integrated with enhanced feature extraction techniques for rapid condition assessment for large-scale cable-stayed bridges. The wavelet transform, Hilbert-Huang transform (HHT), and Teager-Huang transform (THT) were selected as three representative feature extraction methods. A kernel function-based SVM was used to facilitate the identification of damaged and undamaged cases. Numerical simulation was conducted to verify the effectiveness and accuracy of the proposed methods applied to a cable-stayed bridge. Results showed that the wavelet time-frequency analysis is more robust to noise than the HHT and THT, whereas the latter two transforms are more sensitive to capture damage/defects. Moreover, for regular signal data, the THT, due to the high time resolution, had the highest concentration and thus is the most sensitive compared with the other two methods. Parameters of interest, including impacts of damage level, damage location, sensor locations, and moving vehicle loading, are extensively discussed. All cases reveal that data-driven approaches could effectively map damage features over and under undamaged cases, dramatically enhancing the effectiveness and accuracy of data classification, which will greatly benefit in situ cable-stayed bridge assessment and management.",
+	"year": "2018"
+}
+

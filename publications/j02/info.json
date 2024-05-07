@@ -1,0 +1,24 @@
+{
+	"name": "j02",
+	"authors": {
+		"Ali Kaveh": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+
+		"Taha Bakhshpoori": {"affiliation":0,
+						"website":" ",
+						"email":" "},
+		"Mohsen Azimi": {"affiliation":0,
+						"website":" ",
+						"email":" "}
+	},
+	"affiliations": ["Center of Excellence for Fundamental Studies in Structural Engineering, School of Civil Engineering, Iran University of Science & Technology, Tehran, Iran."],
+	"title": "Seismic optimal design of 3D steel frames using cuckoo search algorithm",
+	"journal": "The Structural Design of Tall and Special Buildings",
+	"doi": "https://doi.org/10.1002/tal.1162",
+	"url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/tal.1162",
+	"code_url": "#",
+	"supplementary_url": "#",
+	"abstract": "The present article is concerned with optimization of real size 3D steel structures under seismic loading based on response spectral and equivalent static analyses. The effect of lateral seismic loading distribution on the achieved optimum designs is investigated. An integrated optimization procedure with the objective of minimizing the self-weight of frame is simply performed interfacing SAP2000 and MATLAB® software in the form of parallel computing. The meta-heuristic algorithm chosen here is the cuckoo search (CS) algorithm recently developed as a type of population-based algorithm inspired by the behavior of some cuckoo species in combination with the Lévy flight behavior. The CS algorithm performs suitable selection of sections from the American Institute of Steel Construction (AISC) wide-flange (W) shapes list. Strength constraints of the AISC load and resistance factor design specification, geometric limitations, and displacement constraints are imposed on the considered frames. Results show similar weights for optimum designs using spectral and equivalent static analyses; however, different material distribution and seismic behaviors are observed.",
+	"year": "2015"
+}
