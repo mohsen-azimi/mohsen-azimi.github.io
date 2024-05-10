@@ -1,0 +1,39 @@
+{
+	"name": "C02",
+
+	"title": "A revisit of fatigue performance based welding quality criteria in bridge welding provisions and guidelines",
+
+	"authors":
+		{
+		"Zhibin Lin": {"affiliation":0,
+						"website":" ",
+						"email":" "},
+
+
+		"Fei Yan": {"affiliation":0,
+						"website":" ",
+						"email":" "},
+
+
+		"Mohsen Azimi": {"affiliation":0,
+						"website":"mohsen-azimi.github.io",
+						"email":""},
+
+
+		"Fardad Azarmi": {"affiliation":0,
+					"website":" ",
+					"email":" "},
+		"Qusay Al-Kaseasbeh": {"affiliation":0,
+					"website":" ",
+					"email":" "}
+		},
+	"affiliations": ["Department of Civil and Environmental Engineering, North Dakota State University, Fargo, ND, USA"],
+	"journal": "International Industrial Informatics and Computer Engineering Conference",
+	"doi": "10.2991/iiicec-15.2015.446",
+	"url": "https://www.atlantis-press.com/proceedings/iiicec-15/17332",
+	"code_url": "#",
+	"supplementary_url": "#",
+	"abstract": "Evaluation of workmanship is usually used as welding quality criteria in bridge welding provisions or guidelines. There is, however, no clear relation between workmanship and welding performance. In some cases, the welding quality criteria cannot guarantee actual performance, in particular for fatigue related issues. Existing acceptance criteria of steel bridge welding is summarized. Further discussion is made on the impacts of fatigue performance of a weld on welding quality criteria.The findings show that the fatigue performance based welding quality criteria have a potential to improve acceptance criteria in steel bridge welding.",
+	"year": "2015"
+}
+
