@@ -171,7 +171,7 @@ def publication_preview(publication_info):
     <table>
     <tr>
     <td class="pub-photocol" >
-    <a href="./{publication_info["name"]}/index.html" target="_blank"><img src="./{publication_info["name"]}/icon.jpg" class="pub-photo" /></a>
+    <a href="./{publication_info["name"]}" target="_blank"><img src="./{publication_info["name"]}/icon.jpg" class="pub-photo" /></a>
     </td>
     """
 
@@ -179,7 +179,7 @@ def publication_preview(publication_info):
 
     <td>
     <div class="pub-title">
-        <a href="./{publication_info["name"]}/index.html" target="_blank">{publication_info["name"]}. {publication_info["title"]}  <i class="fa fa-external-link"></i></a>
+        <a href="./{publication_info["name"]}" target="_blank">{publication_info["name"]}. {publication_info["title"]}  <i class="fa fa-external-link"></i></a>
     </div>
     
     """
