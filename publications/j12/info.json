@@ -1,0 +1,44 @@
+{
+	"name": "j12",
+	"authors":
+		{
+		"Ehsan Vaghefi": {"affiliation":0,
+						"website":" ",
+						"email":"#"},
+		"Seyedmehrab Hosseini": {"affiliation":0,
+						"website":" ",
+						"email":"#"},
+
+		"Mohsen Azimi": {"affiliation":1,
+						"website":"https://mohsen-azimi.github.io/",
+						"email":"#"},
+
+		"Andrii Shmatok": {"affiliation":2,
+						"website":" ",
+						"email":"#"},
+
+		"Rong Zhao": {"affiliation":2,
+						"website":" ",
+						"email":"#"},
+
+		"Bart Prorok": {"affiliation":2,
+						"website":" ",
+						"email":"#"},
+
+		"Elham Mirkoohi": {"affiliation":0,
+					"website":" ",
+					"email":" "}
+		},
+	"affiliations": ["Department of Mechanical Engineering, Auburn University, 354 War Eagle Way, Auburn, 36849, AL, USA",
+		"College of Computing, Georgia Institute of Technology, 801 AtlanticDr, Atlanta, 30332, GA, USA",
+		"Department of Materials Engineering, Auburn University, 275 Wilmore Labs, Auburn, 36849, AL, USA"],
+	"title": "Volumetric Defect Classification in Nanoresolution X-ray Computed Tomography Images of Laser Powder Bed Fusion via Deep Learning",
+	"journal": "Journal of Manufacturing Processes",
+	"doi": "#",
+	"url": "#",
+	"code_url": "#",
+	"supplementary_url": "#",
+	"abstract": "Additively manufactured (AMed) components often contain volumetric defects that significantly impact mechanical and fatigue properties across various material systems. Nano-resolution X-ray computed tomography (XCT) provides precise imaging of these defects, however, XCT software struggles to differentiate between types of defects (e.g., lack of fusion, gas-entrapped pores, and keyhole), each with distinct effects on mechanical properties. To address this problem, we introduce VolDefSegNet, an automated framework based on convolutional neural networks (CNNs), for semantic segmentation of common volumetric defects in AMed components. VolDefSegNet incorporates deep learning techniques and leverages seven defect features for automated defect labeling, enhancing robustness and generalization. We trained VolDefSegNet on a comprehensive dataset of approximately 90,000 labeled defects and achieved superior performance metrics (F1-score of 0.91 and IoU of 0.68) compared to alternative models. Additionally, we explored the impact of various hyperparameters on VolDefSegNet’s performance to identify optimal hyperparameters for the framework, highlighting the framework’s potential in streamlining defect classification processes despite the challenges posed by XCT machine and software",
+	"year": "2024"
+}
+
