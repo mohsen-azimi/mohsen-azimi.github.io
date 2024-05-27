@@ -3,10 +3,10 @@
 	"authors":
 		{
 		"Ehsan Vaghefi": {"affiliation":0,
-						"website":" ",
+						"website":"#",
 						"email":"#"},
 		"Seyedmehrab Hosseini": {"affiliation":0,
-						"website":" ",
+						"website":"#",
 						"email":"#"},
 
 		"Mohsen Azimi": {"affiliation":1,
@@ -14,19 +14,19 @@
 						"email":"#"},
 
 		"Andrii Shmatok": {"affiliation":2,
-						"website":" ",
+						"website":"#",
 						"email":"#"},
 
 		"Rong Zhao": {"affiliation":2,
-						"website":" ",
+						"website":"#",
 						"email":"#"},
 
 		"Bart Prorok": {"affiliation":2,
-						"website":" ",
+						"website":"#",
 						"email":"#"},
 
 		"Elham Mirkoohi": {"affiliation":0,
-					"website":" ",
+						"website":"#",
 					"email":" "}
 		},
 	"affiliations": ["Department of Mechanical Engineering, Auburn University, 354 War Eagle Way, Auburn, 36849, AL, USA",
