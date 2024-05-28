@@ -349,7 +349,7 @@ def update_pulications_list(publication_previews):
 
     return publications_list_html
 
-list_of_publications = ["j12","j11", "j10", "j09", "j08", "j07", "j06", "j05","j04","j03","j02", "j01", "c04","c03", "c02"]# , "j01"] # "j01 - Copy"]
+list_of_publications = ["j12","j11", "j10", "j09", "j08", "j07", "j06", "j05","j04","j03","j02", "j01", "c07","c06","c05","c04","c03", "c02"]# , "j01"] # "j01 - Copy"]
 
 previews = []
 for publication in list_of_publications:
