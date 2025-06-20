@@ -1,38 +1,568 @@
 <!DOCTYPE HTML>
 <!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	academic-icon: https://jpswalsh.github.io/academicons/usage.html
+	Modern Portfolio by Mohsen Azimi
+	Based on Editorial by HTML5 UP (html5up.net)
+	Updated with modern frameworks and styling
 -->
-<html>
+<html lang="en">
 	<head>
-
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-P6YGMC7ZES"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
-
 		  gtag('config', 'G-P6YGMC7ZES');
 		</script>
 		
 		<title>Mohsen Azimi | Home</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Mohsen Azimi - Researcher in Structural Health Monitoring and Deep Learning">
+		<meta name="keywords" content="Structural Health Monitoring, Deep Learning, Machine Learning, UBC">
+		<meta name="theme-color" content="#2563eb">
 
-
-		<!-- Webmaster Tools verfication -->
+		<!-- Webmaster Tools verification -->
 		<meta name="google-site-verification" content="bbCSt7E9VqjMfEkQuDujWSRM4pCj7nb4gd8LnVGAMgc">
 
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="assets/images/favicon.png">
 		
+		<!-- Modern CSS frameworks -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+		
+		<!-- Original CSS with customizations -->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<!-- Academic icons -->
 		<link rel="stylesheet" href="assets/css/academicons.min.css"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
+		<!-- Font Awesome 6 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+		
+		<!-- Google Fonts - Professional Tech/Academic -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+		
+		<!-- AOS (Animate On Scroll) Library -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		
+		<!-- Tippy.js for tooltips -->
+		<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+		
+		<!-- Custom styles -->
+		<style>
+			:root {
+				--primary-color: #2563eb;      /* Professional blue */
+				--secondary-color: #475569;    /* Slate gray */
+				--accent-color: #3b82f6;       /* Accent blue */
+				--text-color: #1e293b;         /* Dark slate for text */
+				--light-bg: #f8fafc;           /* Light background */
+				--card-bg: #ffffff;            /* Card background */
+				--border-color: #e2e8f0;       /* Border color */
+				--heading-color: #0f172a;      /* Almost black for headings */
+				--success-color: #10b981;      /* Green for success elements */
+				--gradient-start: #2563eb;     /* Gradient start color */
+				--gradient-end: #1e40af;       /* Gradient end color */
+				--code-bg: #f1f5f9;            /* Code background */
+				--card-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.03);
+				--card-shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.04), 0 4px 6px rgba(0, 0, 0, 0.02);
+				--transition-standard: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+			}
+			
+			body {
+				font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+				color: var(--text-color);
+				line-height: 1.6;
+				font-weight: 400;
+				background-color: var(--light-bg);
+				scroll-behavior: smooth;
+				overflow-x: hidden;
+			}
+			
+			h1, h2, h3, h4, h5, h6 {
+				font-family: 'Montserrat', sans-serif;
+				color: var(--heading-color);
+				font-weight: 600;
+				letter-spacing: -0.01em;
+				line-height: 1.3;
+			}
+			
+			h1 {
+				font-weight: 700;
+				letter-spacing: -0.02em;
+			}
+			
+			.modern-card {
+				border-radius: 8px;
+				background-color: var(--card-bg);
+				border: 1px solid var(--border-color);
+				box-shadow: var(--card-shadow);
+				transition: var(--transition-standard);
+				overflow: hidden;
+				height: 100%;
+				position: relative;
+				z-index: 1;
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.modern-card::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(37, 99, 235, 0) 100%);
+				opacity: 0;
+				transition: var(--transition-standard);
+				z-index: -1;
+			}
+			
+			.modern-card:hover {
+				transform: translateY(-3px);
+				box-shadow: var(--card-shadow-hover);
+			}
+			
+			.modern-card:hover::before {
+				opacity: 1;
+			}
+			
+			.modern-card .p-4 {
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+			}
+			
+			.modern-card .content-wrapper {
+				flex-grow: 1;
+			}
+			
+			.modern-card .button-row {
+				margin-top: auto;
+			}
+			
+			.btn-primary {
+				background-color: var(--primary-color);
+				border-color: var(--primary-color);
+				border-radius: 6px;
+				padding: 8px 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 0.85em;
+				font-weight: 500;
+				letter-spacing: 0.3px;
+				transition: var(--transition-standard);
+				position: relative;
+				overflow: hidden;
+				z-index: 1;
+			}
+			
+			.btn-primary::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+				transition: all 0.6s ease;
+				z-index: -1;
+			}
+			
+			.btn-primary:hover {
+				background-color: #1d4ed8; /* Slightly darker blue */
+				border-color: #1d4ed8;
+				box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
+			}
+			
+			.btn-primary:hover::after {
+				left: 100%;
+			}
+			
+			.section-title {
+				position: relative;
+				padding-bottom: 14px;
+				margin-bottom: 28px;
+				font-weight: 600;
+				color: var(--heading-color);
+			}
+			
+			.section-title::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 50px;
+				height: 3px;
+				background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+				border-radius: 3px;
+			}
+			
+			/* Modern header with glassmorphism effect */
+			#header {
+				backdrop-filter: blur(10px);
+				-webkit-backdrop-filter: blur(10px);
+				background-color: rgba(248, 250, 252, 0.8);
+				border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+				padding: 1.5rem 0;
+				margin-bottom: 2rem;
+				position: sticky;
+				top: 0;
+				z-index: 1000;
+				transition: var(--transition-standard);
+			}
+			
+			.scrolled #header {
+				padding: 0.8rem 0;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+			}
+			
+			#header .logo {
+				font-weight: 600;
+				font-size: 1.4em;
+				letter-spacing: -0.02em;
+				transition: var(--transition-standard);
+			}
+			
+			.scrolled #header .logo {
+				font-size: 1.2em;
+			}
+			
+			.social-icons {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+			}
+			
+			/* Publication image frames styling - completely revised */
+			.pub-image {
+				overflow: hidden;
+				width: 100%;
+				height: 220px; /* Fixed height for all publication images */
+				background-color: #f8fafc;
+				border-top-left-radius: 8px;
+				border-top-right-radius: 8px;
+			}
+			
+			.pub-image a.image-hover-zoom {
+				display: block;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			.pub-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover; /* Cover the area without stretching */
+				object-position: center; /* Center the image */
+				transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+			}
+			
+			.pub-image a:hover img {
+				transform: scale(1.03);
+			}
+			
+			.social-icons a {
+				font-size: 1.2em;
+				margin-left: 15px;
+				color: var(--secondary-color);
+				transition: var(--transition-standard);
+				position: relative;
+				width: 36px;
+				height: 36px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: rgba(255, 255, 255, 0.8);
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+			}
+			
+			.social-icons a:hover {
+				color: var(--primary-color);
+				transform: translateY(-3px);
+				box-shadow: 0 5px 10px rgba(37, 99, 235, 0.1);
+			}
+			
+			.badge {
+				background-color: #dbeafe !important; /* Light blue background */
+				color: var(--primary-color) !important; /* Blue text */
+				font-weight: 500;
+				padding: 0.35em 0.8em;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.badge::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(90deg, rgba(219, 234, 254, 0.4) 0%, rgba(219, 234, 254, 0) 50%);
+				animation: badge-shine 3s infinite;
+			}
+			
+			@keyframes badge-shine {
+				0% { left: -100%; }
+				20% { left: 100%; }
+				100% { left: 100%; }
+			}
+			
+			a {
+				color: var(--primary-color);
+				text-decoration: none;
+				transition: var(--transition-standard);
+			}
+			
+			a:hover {
+				color: #1d4ed8; /* Slightly darker blue */
+			}
+			
+			.text-primary {
+				color: var(--primary-color) !important;
+			}
+			
+			.text-muted {
+				color: var(--secondary-color) !important;
+				font-size: 0.9em;
+			}
+			
+			.lead {
+				font-weight: 300;
+				font-size: 1.15rem;
+				color: var(--secondary-color);
+				margin-bottom: 1.5rem;
+			}
+			
+			#sidebar {
+				background-color: #f8fafc;
+				border-left: 1px solid var(--border-color);
+				padding-top: 1.5rem;
+			}
+			
+			#sidebar .opener {
+				color: var(--heading-color);
+				font-weight: 500;
+				display: flex;
+				align-items: center;
+				transition: var(--transition-standard);
+			}
+			
+			#sidebar .opener:hover {
+				color: var(--primary-color);
+			}
+			
+			#sidebar .opener i {
+				margin-right: 8px;
+				transition: var(--transition-standard);
+			}
+			
+			#sidebar .opener:hover i {
+				transform: translateX(3px);
+			}
+			
+			/* Enhanced banner section */
+			#banner {
+				position: relative;
+				overflow: hidden;
+				padding: 4rem 0 3rem;
+				margin-bottom: 3rem;
+			}
+			
+			#banner::before {
+				content: '';
+				position: absolute;
+				top: -10%;
+				right: -10%;
+				width: 500px;
+				height: 500px;
+				background: radial-gradient(circle, rgba(37, 99, 235, 0.07) 0%, rgba(37, 99, 235, 0) 70%);
+				z-index: -1;
+				border-radius: 50%;
+			}
+			
+			#banner h1 {
+				font-size: 3rem;
+				margin-bottom: 1rem;
+				background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+			}
+			
+			/* Image with modern styling */
+			.image-hover-zoom {
+				overflow: hidden;
+				border-radius: 8px;
+				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+				position: relative;
+			}
+			
+			.image-hover-zoom img {
+				transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+				transform-origin: center center;
+			}
+			
+			.image-hover-zoom:hover img {
+				transform: scale(1.03);
+			}
+			
+			.image-hover-zoom::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.1);
+				border-radius: 8px;
+				pointer-events: none;
+			}
+			
+			/* Improved scrollbar */
+			::-webkit-scrollbar {
+				width: 8px;
+				height: 8px;
+			}
+			
+			::-webkit-scrollbar-track {
+				background: #f1f1f1;
+				border-radius: 4px;
+			}
+			
+			::-webkit-scrollbar-thumb {
+				background: #d1d5db;
+				border-radius: 4px;
+				transition: var(--transition-standard);
+			}
+			
+			::-webkit-scrollbar-thumb:hover {
+				background: #9ca3af;
+			}
+			
+			/* Scroll to top button */
+			.scroll-to-top {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				width: 45px;
+				height: 45px;
+				background-color: var(--primary-color);
+				color: white;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 1.2rem;
+				opacity: 0;
+				visibility: hidden;
+				box-shadow: 0 2px 10px rgba(37, 99, 235, 0.2);
+				cursor: pointer;
+				transition: all 0.3s ease;
+				z-index: 1000;
+			}
+			
+			.scroll-to-top:hover {
+				background-color: #1d4ed8;
+				transform: translateY(-3px);
+				box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+			}
+			
+			.scroll-to-top.show {
+				opacity: 1;
+				visibility: visible;
+			}
+			
+			/* Animations and transitions */
+			.fade-in {
+				animation: fadeIn 0.5s ease-in-out;
+			}
+			
+			@keyframes fadeIn {
+				from { opacity: 0; }
+				to { opacity: 1; }
+			}
+			
+			/* Advanced tooltip styling */
+			.tippy-box {
+				background-color: var(--heading-color);
+				border-radius: 4px;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 0.85rem;
+			}
+			
+			.tippy-arrow {
+				color: var(--heading-color);
+			}
+			
+			.dark-mode .tippy-box {
+				background-color: #60a5fa;
+			}
+			
+			.dark-mode .tippy-arrow {
+				color: #60a5fa;
+			}
+			
+			/* Progress bar for skills */
+			.skill-progress-bar {
+				height: 6px;
+				background-color: #e2e8f0;
+				border-radius: 3px;
+				margin-bottom: 1rem;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.skill-progress-fill {
+				height: 100%;
+				background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+				border-radius: 3px;
+				position: relative;
+				transition: width 1s ease;
+				width: 0;
+			}
+			
+			.dark-mode .skill-progress-bar {
+				background-color: #334155;
+			}
+			
+			.dark-mode .skill-progress-fill {
+				background: linear-gradient(90deg, #60a5fa, #3b82f6);
+			}
+			
+			/* Research icon enhancements */
+			.research-icon {
+				margin: 0 auto 1.5rem auto;
+				height: 70px;
+				width: 70px;
+				line-height: 70px;
+				border-radius: 50%;
+				background: rgba(37, 99, 235, 0.1);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: var(--transition-standard);
+			}
+			
+			.modern-card:hover .research-icon {
+				transform: translateY(-5px);
+				background: rgba(37, 99, 235, 0.15);
+			}
+		</style>
 	</head>
 	<body class="is-preload">
+		<!-- Scroll to top button -->
+		<div class="scroll-to-top" id="scrollToTop">
+			<i class="fas fa-arrow-up"></i>
+		</div>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -41,253 +571,379 @@
 					<div id="main">
 						<div class="inner">
 
-							<!-- Header -->
-								<header id="header">
+							<!-- Header with glassmorphism -->
+							<header id="header" class="animate__animated animate__fadeIn">
+								<div class="d-flex justify-content-between align-items-center">
 									<a href="index.html" class="logo"><strong>Mohsen</strong> Azimi</a>
-									<ul class="icons">
-										<li><a href="https://www.linkedin.com/in/mohsenazimi/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://www.researchgate.net/profile/Mohsen_Azimi" class="icon brands fa-researchgate"><span class="label">ResearchGate</span></a></li>
-										<li><a href="https://github.com/mohsen-azimi" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									</ul>
+									<div class="social-icons">
+										<a href="https://www.linkedin.com/in/mohsenazimi/" aria-label="LinkedIn" target="_blank" data-tippy-content="LinkedIn"><i class="fab fa-linkedin"></i></a>
+										<a href="https://www.researchgate.net/profile/Mohsen_Azimi" aria-label="ResearchGate" target="_blank" data-tippy-content="ResearchGate"><i class="fab fa-researchgate"></i></a>
+										<a href="https://github.com/mohsen-azimi" aria-label="GitHub" target="_blank" data-tippy-content="GitHub"><i class="fab fa-github"></i></a>
+										<a href="https://scholar.google.com/citations?user=dfhewssAAAAJ&hl=en/" aria-label="Google Scholar" target="_blank" data-tippy-content="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+									</div>
+								</div>
 								</header>
 
-
-
-
-
-
-							<!-- Banner -->
-								<section id="banner">
+							<!-- Banner section with enhanced styling -->
+							<section id="banner" data-aos="fade-up" data-aos-duration="800">
+								<div class="row align-items-center">
+									<div class="col-lg-7">
 									<div class="content">
-										<header>
-											<h1>Mohsen Azimi <br />
-											  </h1>
-											<p>Smart Structures @ UBC</p>
+											<header class="mb-4">
+												<h1 class="mb-3">Mohsen Azimi</h1>
+												<p class="badge rounded-pill px-3 py-2 fs-6 mb-0">Smart Structures @ UBC</p>
 										</header>
-										<p> 
-																				
-										<!--span class="image object">
-											<img src="https://www.seekpng.com/png/detail/259-2598162_page-in-under-construction.png" alt="" />
-										</span-->
-
-										</p>
-										<ul class="actions">
-											<p> My main research interest is in devising deep learning methods and computer vision for Structural Health Monitoring.</p>
-											<!-- Cyber-physical systems for adaptive digital twinning and structural health monitoring using computer vision, robotics, and deep learning-->
-
-										</ul>
+											<p class="lead"> 
+												My main research interest is in devising machine learning methods and computer vision for Structural Health Monitoring.
+											</p>
+											<a href="#research" class="btn btn-primary mt-3 scroll-to">Research Interests</a>
+										</div>
 									</div>
-									<span class="image object">
-										<!--img src="https://drive.google.com/uc?export=view&id=1L4ommEgZV8pZn7kkQI-e5pFmSeJqbG4F" alt="" /-->
-										<img src="assets/images/Mohsen.JPG" alt="" />
-									</span>
+									<div class="col-lg-5">
+										<div class="image-hover-zoom" data-aos="zoom-in" data-aos-delay="200">
+											<img src="assets/images/Mohsen.JPG" alt="Mohsen Azimi" class="img-fluid" />
+										</div>
+									</div>
+								</div>
 								</section>
 
-
-
-
-							<!-- Section -->
-								<section>
+							<!-- Education Section with modern styling -->
+							<section data-aos="fade-up" data-aos-duration="800">
 									<header class="major">
-										<h2>I studied/worked at</h2>
+									<h2 class="section-title">Education & Experience</h2>
 									</header>
-									<div class="features">
-										<article>
-											<span class="image object">
-												<img
-												style= "max-width: 70px"
-												src="https://pbs.twimg.com/profile_images/1174018931532550144/jRmFjhVX_400x400.png" alt="" />
-											</span>
-											<div class="content">
-<!--												<h3>Research & Teaching Assistant </h3>-->
-												<p>2019–2024</p>
+								<div class="row g-4 justify-content-center">
+									<div class="col-6 col-md-4 col-lg">
+										<article class="modern-card p-3 text-center h-100 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+											<div class="image object mb-3 d-flex justify-content-center align-items-center">
+												<img style="max-width: 70px; max-height: 70px;" src="https://pbs.twimg.com/profile_images/1174018931532550144/jRmFjhVX_400x400.png" alt="UBC logo" />
+											</div>
+											<div class="content flex-grow-1 d-flex flex-column">
+												<h5>University of British Columbia</h5>
+												<p class="mb-0 mt-auto">2019–2025</p>
 											</div>
 										</article>
-
-										<article>
-											<span class="image object">
-												<img
-												style= "max-width: 70px"
-												src="https://www.unr.edu/Assets/Icons/logos/university-logo.svg" alt="" />
-											</span>
-											<div class="content">
-<!--												<h3>Research Assistant & Research Associate </h3>-->
-												<p>2017–2019</p>
-											</div>
-										</article>
-
-										<article>
-											<span class="image object">
-												<img
-												style= "max-width: 70px"
-												src="https://pbs.twimg.com/profile_images/1079852671324979200/W3LrdcZ0_400x400.jpg" alt="" />
-											</span>
-											<div class="content">
-<!--												<h3>Research & Teaching Assistant </h3>-->
-												<p>2014–2017</p>
-											</div>
-										</article>
-
-										<article>
-											<span class="image object">
-												<img
-												style= "max-width: 70px"
-												src="https://upload.wikimedia.org/wikipedia/en/8/88/IUST_logo_color.png" alt="" />
-											</span>
-											<div class="content">
-<!--												<h3>Research Assistant </h3>-->
-												<p>2009–2011</p>
-											</div>
-										</article>
-
-
 									</div>
-								</section>
+									
+									<div class="col-6 col-md-4 col-lg">
+										<article class="modern-card p-3 text-center h-100 d-flex flex-column" data-aos="fade-up" data-aos-delay="150">
+											<div class="image object mb-3 d-flex justify-content-center align-items-center">
+												<img style="max-width: 70px; max-height: 70px;" src="https://brand.gatech.edu/sites/default/files/inline-images/GTVertical_RGB.png" alt="Georgia Tech logo" />
+											</div>
+											<div class="content flex-grow-1 d-flex flex-column">
+												<h5>Georgia Institute of Technology</h5>
+												<p class="mb-0 mt-auto">2022–2025</p>
+											</div>
+										</article>
+									</div>
+									
+									<div class="col-6 col-md-4 col-lg">
+										<article class="modern-card p-3 text-center h-100 d-flex flex-column" data-aos="fade-up" data-aos-delay="200">
+											<div class="image object mb-3 d-flex justify-content-center align-items-center">
+												<img style="max-width: 70px; max-height: 70px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoNMNq0PT_VJ_Uek849xRQsQv6RAT1LWPHA&s" alt="Quantic logo" />
+											</div>
+											<div class="content flex-grow-1 d-flex flex-column">
+												<h5>Quantic School of Business and Technology</h5>
+												<p class="mb-0 mt-auto">2020–2020</p>
+											</div>
+										</article>
+									</div>
+									
+									<div class="col-6 col-md-4 col-lg">
+										<article class="modern-card p-3 text-center h-100 d-flex flex-column" data-aos="fade-up" data-aos-delay="250">
+											<div class="image object mb-3 d-flex justify-content-center align-items-center">
+												<img style="max-width: 70px; max-height: 70px;" src="https://www.unr.edu/Assets/Icons/logos/university-logo.svg" alt="UNR logo" />
+											</div>
+											<div class="content flex-grow-1 d-flex flex-column">
+												<h5>University of Nevada, Reno</h5>
+												<p class="mb-0 mt-auto">2017–2017</p>
+											</div>
+										</article>
+									</div>
+									
+									<div class="col-6 col-md-4 col-lg">
+										<article class="modern-card p-3 text-center h-100 d-flex flex-column" data-aos="fade-up" data-aos-delay="300">
+											<div class="image object mb-3 d-flex justify-content-center align-items-center">
+												<img style="max-width: 70px; max-height: 70px;" src="https://images.credly.com/images/8a4bb1e5-a108-44a6-a01e-67457ec0811f/blob.png" alt="NDSU logo" />
+											</div>
+											<div class="content flex-grow-1 d-flex flex-column">
+												<h5>North Dakota State University</h5>
+												<p class="mb-0 mt-auto">2014–2014</p>
+											</div>
+										</article>
+									</div>
+									
+									<div class="col-6 col-md-4 col-lg">
+										<article class="modern-card p-3 text-center h-100 d-flex flex-column" data-aos="fade-up" data-aos-delay="350">
+											<div class="image object mb-3 d-flex justify-content-center align-items-center">
+												<img style="max-width: 70px; max-height: 70px;" src="https://upload.wikimedia.org/wikipedia/en/8/88/IUST_logo_color.png" alt="IUST logo" />
+											</div>
+											<div class="content flex-grow-1 d-flex flex-column">
+												<h5>Iran University of Science and Technology</h5>
+												<p class="mb-0 mt-auto">2009–2011</p>
+											</div>
+										</article>
+									</div>
+									
+									<div class="col-6 col-md-4 col-lg">
+										<article class="modern-card p-3 text-center h-100 d-flex flex-column" data-aos="fade-up" data-aos-delay="400">
+											<div class="image object mb-3 d-flex justify-content-center align-items-center">
+												<img style="max-width: 70px; max-height: 70px;" src="https://static.anlatsin.com/media/topic/logo/university-of-mohaghegh-ardabili_1575880630.jpg" alt="UMA logo" />
+											</div>
+											<div class="content flex-grow-1 d-flex flex-column">
+												<h5>University of Mohaghegh Ardabili</h5>
+												<p class="mb-0 mt-auto">2005–2009</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
 
-							<!-- Section -->
-								<section>
+							<!-- Research Interests Section with enhanced design -->
+							<section id="research" data-aos="fade-up" data-aos-duration="800">
 									<header class="major">
-										<h2>Recent Publications</h2>
+									<h2 class="section-title">Research Interests</h2>
 									</header>
-									<div class="posts">
+								<div class="row g-4">
+									<div class="col-md-4">
+										<div class="modern-card h-100 p-4 text-center" data-aos="fade-up" data-aos-delay="100">
+											<div class="research-icon">
+												<i class="fas fa-brain fa-3x text-primary"></i>
+											</div>
+											<h3>Machine Learning</h3>
+											<p>Application of neural networks and deep learning architectures for structural analysis and monitoring.</p>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="modern-card h-100 p-4 text-center" data-aos="fade-up" data-aos-delay="200">
+											<div class="research-icon">
+												<i class="fas fa-eye fa-3x text-primary"></i>
+											</div>
+											<h3>Computer Vision</h3>
+											<p>Implementing computer vision techniques for visual inspection and structural damage detection.</p>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="modern-card h-100 p-4 text-center" data-aos="fade-up" data-aos-delay="300">
+											<div class="research-icon">
+												<i class="fas fa-building fa-3x text-primary"></i>
+											</div>
+											<h3>Structural Health Monitoring</h3>
+											<p>Developing intelligent systems for real-time monitoring of civil infrastructure.</p>
+										</div>
+									</div>
+								</div>
+							</section>
 
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Recent Papers</h3>
-											<p> Loading...!</p>
-											<ul class="actions">
-												<li><a href="https://scholar.google.com/citations?user=dfhewssAAAAJ&hl=en/" class="button">Full list<span style="color: #4383f3;"><i class="ai ai-google-scholar ai-2x"></i></a></li>
-												
-											</ul>
+							<!-- Publications Section with modern design -->
+							<section data-aos="fade-up" data-aos-duration="800" class="mt-5">
+								<header class="major">
+									<h2 class="section-title">Recent Publications</h2>
+								</header>
+								
+								<div class="publications-container">
+									<div class="row g-4">
+										<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+											<article class="modern-card h-100">
+												<div class="pub-image">
+													<a href="https://doi.org/10.1111/mice.13211" class="image image-hover-zoom" target="_blank">
+														<img src="publications/j11/icon.jpg" alt="Transformer-based framework" class="img-fluid" />
+													</a>
+												</div>
+												<div class="p-4">
+													<div class="content-wrapper">
+														<span class="badge mb-2">Deep Learning</span>
+														<h3 class="mt-2 mb-3">Transformer-based framework for accurate segmentation of high-resolution images in structural health monitoring</h3>
+														<p>High-resolution image segmentation is essential in structural health monitoring (SHM), enabling accurate detection and quantification of structural components and damages.</p>
+													</div>
+													<div class="button-row d-flex justify-content-between align-items-center mt-4">
+														<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mice.13211" class="btn btn-primary" target="_blank">Read Paper</a>
+														<div class="pub-meta text-muted">
+															<small><i class="far fa-calendar-alt me-1"></i> 2024</small>
+														</div>
+													</div>
+												</div>
+											</article>
+										</div>
+										
+										<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+											<article class="modern-card h-100">
+												<div class="pub-image">
+													<a href="https://doi.org/10.1016/j.jmapro.2024.05.030" class="image image-hover-zoom" target="_blank">
+														<img src="publications/j12/icon.jpg" alt="Volumetric Defect Classification" class="img-fluid" />
+													</a>
+												</div>
+												<div class="p-4">
+													<div class="content-wrapper">
+														<span class="badge mb-2">Deep Learning</span>
+														<h3 class="mt-2 mb-3">Volumetric Defect Classification in Nanoresolution X-ray Computed Tomography Images of Laser Powder Bed Fusion via Deep Learning</h3>
+														<p>Additively manufactured components often contain volumetric defects that significantly impact mechanical and fatigue properties across various material systems.</p>
+													</div>
+													<div class="button-row d-flex justify-content-between align-items-center mt-4">
+														<a href="https://lnkd.in/gE4MUjfV" class="btn btn-primary" target="_blank">Read Paper</a>
+														<div class="pub-meta text-muted">
+															<small><i class="far fa-calendar-alt me-1"></i> 2024</small>
+														</div>
+													</div>
+												</div>
+											</article>
+										</div>
+										
+										<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+											<article class="modern-card h-100">
+												<div class="pub-image">
+													<a href="https://www.sciencedirect.com/science/article/pii/S2352012423013681?via%3Dihub" class="image image-hover-zoom" target="_blank">
+														<img src="https://ars.els-cdn.com/content/image/1-s2.0-S2352012423013681-gr5.jpg" alt="Research graph" class="img-fluid" />
+													</a>
+												</div>
+												<div class="p-4">
+													<div class="content-wrapper">
+														<span class="badge mb-2">Feature Selection</span>
+														<h3 class="mt-2 mb-3">Structural health monitoring via a group-theoretic WSA for optimal feature selection and data fusion</h3>
+														<p>In this study, two binary versions of the Water Strider Algorithm (WSA) are proposed and applied to optimal feature selection in classification problems.</p>
+													</div>
+													<div class="button-row d-flex justify-content-between align-items-center mt-4">
+														<a href="https://linkinghub.elsevier.com/retrieve/pii/S2352012423013681" class="btn btn-primary" target="_blank">Read Paper</a>
+														<div class="pub-meta text-muted">
+															<small><i class="far fa-calendar-alt me-1"></i> 2023</small>
+														</div>
+													</div>
+												</div>
 										</article>
-
-
-
-
-										<article>
-											<a href="https://www.sciencedirect.com/science/article/pii/S2352012423013681?via%3Dihub" class="image"><img src="https://ars.els-cdn.com/content/image/1-s2.0-S2352012423013681-gr5.jpg" alt="" /></a>
-											<h3>Structural health monitoring via a group-theoretic WSA for optimal feature selection and data fusion</h3>
-											<p>In this study, two binary versions of the Water Strider Algorithm (WSA) are proposed and applied to optimal feature selection in classification problems. In the new binary versions, the formulations of WSA in continuous space are converted into binary space using group-theoretic operators (in AWSA) and sigmoid function (in BWSA). AWSA, BWSA, genetic algorithm (GA), and binary particle swarm optimization (BPSO) are selected and compared over eighteen well-known datasets from the University of California, Irvine repository...
-
-												<a href="https://linkinghub.elsevier.com/retrieve/pii/S2352012423013681"><span style="color: #FCB425;"><i class="ai ai-doi ai-2x"></i>
-											</p>
+										</div>
+										
+										<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+											<article class="modern-card h-100">
+												<div class="pub-image">
+													<a href="https://www.tandfonline.com/doi/abs/10.1080/15397734.2020.1835489" class="image image-hover-zoom" target="_blank">
+														<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs00707-020-02878-2/MediaObjects/707_2020_2878_Fig1_HTML.png" alt="Research diagram" class="img-fluid" />
+													</a>
+												</div>
+												<div class="p-4">
+													<div class="content-wrapper">
+														<span class="badge mb-2">Framework Development</span>
+														<h3 class="mt-2 mb-3">An open-source framework for the FE modeling and optimal design of fiber-steered variable-stiffness composite cylinders</h3>
+														<p>In this article, an open-source ABAQUS/MATLAB-based framework is developed for the bending-induced buckling design of variable-stiffness (VS) composite cylinders.</p>
+													</div>
+													<div class="button-row d-flex justify-content-between align-items-center mt-4">
+														<a href="https://www.tandfonline.com/doi/abs/10.1080/15397734.2020.1835489" class="btn btn-primary" target="_blank">Read Paper</a>
+														<div class="pub-meta text-muted">
+															<small><i class="far fa-calendar-alt me-1"></i> 2020</small>
+														</div>
+													</div>
+												</div>
 										</article>
-
-
-
-
-										<article>
-											<a href="https://www.tandfonline.com/doi/abs/10.1080/15397734.2020.1835489" class="image"><img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs00707-020-02878-2/MediaObjects/707_2020_2878_Fig1_HTML.png" alt="" /></a>
-											<h3>An open-source framework for the FE modeling and optimal design of fiber-steered variable-stiffness composite cylinders using water strider algorithm</h3>
-											<p>As the automated fiber placement (AFP) manufacturing technology is developed, curvilinear fiber path composite structures received extensive attention. Therefore, developing a design framework capable of optimizing such structures is a significant challenge for researchers and engineers in this domain. In this article, an open-source ABAQUS/MATLAB-based framework is developed for the bending-induced buckling design of variable-stiffness (VS) composite cylinders made using the AFP method. The framework is based on an interface between ABAQUS FE packages with MATLAB environment using Python scripting language…
-												<a href="https://www.tandfonline.com/doi/abs/10.1080/15397734.2020.1835489"><span style="color: #FCB425;"><i class="ai ai-doi ai-2x"></i>
-											</p>
+										</div>
+										
+										<div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+											<article class="modern-card h-100">
+												<div class="pub-image">
+													<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mice.12517" class="image image-hover-zoom" target="_blank">
+														<img src="https://www.researchgate.net/publication/336889074/figure/fig14/AS:822836230909953@1573190853880/TL-procedure-and-CNN-configurations-of-the-pre-trained-top-and-fine-tuned-bottom_W640.jpg" alt="CNN configurations" class="img-fluid" />
+													</a>
+												</div>
+												<div class="p-4">
+													<div class="content-wrapper">
+														<span class="badge mb-2">Deep Learning</span>
+														<h3 class="mt-2 mb-3">Structural health monitoring using extremely compressed data through deep learning</h3>
+														<p>This study introduces a novel convolutional neural network (CNN)‐based approach for structural health monitoring (SHM) that exploits a form of measured compressed response data.</p>
+													</div>
+													<div class="button-row d-flex justify-content-between align-items-center mt-4">
+														<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mice.12517" class="btn btn-primary" target="_blank">Read Paper</a>
+														<div class="pub-meta text-muted">
+															<small><i class="far fa-calendar-alt me-1"></i> 2020</small>
+														</div>
+													</div>
+												</div>
 										</article>
-
-										<article>
-											<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mice.12517" class="image"><img src="https://www.researchgate.net/publication/336889074/figure/fig14/AS:822836230909953@1573190853880/TL-procedure-and-CNN-configurations-of-the-pre-trained-top-and-fine-tuned-bottom_W640.jpg" alt="" /></a>
-											<h3>Structural health monitoring using extremely compressed data through deep learning</h3>
-											<p>This study introduces a novel convolutional neural network (CNN)‐based approach for structural health monitoring (SHM) that exploits a form of measured compressed response data through transfer learning (TL)‐based techniques. The implementation of the proposed methodology allows damage identification and localization within a realistic large‐scale system. To validate the proposed method, first, a well‐known benchmark model is numerically simulated. Using acceleration response histories, as well as compressed response data in terms of discrete histograms, CNN models are trained, and the robustness of the CNN architectures is evaluated.
-
-											<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mice.12517"><span style="color: #FCB425;"><i class="ai ai-doi ai-2x"></i>
-											</p>
+										</div>
+										
+										<div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+											<article class="modern-card h-100">
+												<div class="pub-image">
+													<a href="https://www.mdpi.com/2224-2708/9/2/18" class="image image-hover-zoom" target="_blank">
+														<img src="https://www.mdpi.com/jsan/jsan-09-00018/article_deploy/html/images/jsan-09-00018-g003-550.jpg" alt="Swarm-based control diagram" class="img-fluid" />
+													</a>
+												</div>
+												<div class="p-4">
+													<div class="content-wrapper">
+														<span class="badge mb-2">Swarm Intelligence</span>
+														<h3 class="mt-2 mb-3">Swarm-Based Parallel Control of Adjacent Irregular Buildings Considering Soil–Structure Interaction</h3>
+														<p>Inspired by swarm intelligence in nature, a new control method, known as swarm-based parallel control (SPC), is proposed in this study.</p>
+													</div>
+													<div class="button-row d-flex justify-content-between align-items-center mt-4">
+														<a href="https://www.mdpi.com/2224-2708/9/2/18" class="btn btn-primary" target="_blank">Read Paper</a>
+														<div class="pub-meta text-muted">
+															<small><i class="far fa-calendar-alt me-1"></i> 2020</small>
+														</div>
+													</div>
+												</div>
 										</article>
-
-										<article>
-											<a href="https://www.mdpi.com/2224-2708/9/2/18" class="image"><img src="https://www.mdpi.com/jsan/jsan-09-00018/article_deploy/html/images/jsan-09-00018-g003-550.jpg" alt="" /></a>
-											<h3>Swarm-Based Parallel Control of Adjacent Irregular Buildings Considering Soil–Structure Interaction</h3>
-											<p>Seismic behavior of tall buildings depends upon the dynamic characteristics of the structure, as well as the base soil properties. To consider these factors, the equations of motion for a multi-story 3D building are developed to include irregularity and soil–structure interaction (SSI). Inspired by swarm intelligence in nature, a new control method, known as swarm-based parallel control (SPC), is proposed in this study to improve the seismic performance and minimize the pounding hazards, by sharing response data among the adjacent buildings at each floor level, using a wireless-sensors network (WSN).
-											<a href="https://www.mdpi.com/2224-2708/9/2/18"><span style="color: #FCB425;"><i class="ai ai-doi ai-2x"></i>
-
-										</article>
-
-										<article>
-											<a href="https://www.mdpi.com/1424-8220/20/10/2778" class="image"><img src="https://www.mdpi.com/sensors/sensors-20-02778/article_deploy/html/images/sensors-20-02778-g001-550.jpg" alt="" /></a>
-											<h3>Data-driven structural health monitoring and damage detection through deep learning: State-of-the-art review</h3>
-											<p>Data-driven methods in structural health monitoring (SHM) is gaining popularity due to recent technological advancements in sensors, as well as high-speed internet and cloud-based computation. Since the introduction of deep learning (DL) in civil engineering, particularly in SHM, this emerging and promising tool has attracted significant attention among researchers. The main goal of this paper is to review the latest publications in SHM using emerging DL-based methods and provide readers with an overall understanding of various SHM applications.
-
-												<a href="https://www.mdpi.com/1424-8220/20/10/2778"><span style="color: #FCB425;"><i class="ai ai-doi ai-2x"></i>
-											</p>
-										</article>
-
-										<article>
-											<a href="https://ascelibrary.org/doi/abs/10.1061/(ASCE)BE.1943-5592.0001199" class="image"><img src="https://www.researchgate.net/publication/318405253/figure/fig1/AS:573829426540545@1513823004622/Framework-of-data-driven-data-mining-process-for-SHM-and-damage-detection_W640.jpg" alt="" /></a>
-											<h3>Time-frequency-based data-driven structural diagnosis and damage detection for cable-stayed bridges</h3>
-											<p>Dynamic characteristics of cable-stayed bridges are widely accepted as valuable indicators to determine their performance in structural health monitoring (SHM). Although research has been extensively conducted in this area, such vibration-based physics methods still face great challenges in improving the effectiveness of damage identification from complex large-scale systems, particularly when other factors, including operational and environmental conditions, may cause high interference to the vibration response. In this study, a framework was developed for data-driven structural diagnosis and damage detection using a support vector machine (SVM) integrated with enhanced feature extraction techniques for rapid condition assessment for large-scale cable-stayed bridges.
-											
-											  
-											  <a href="https://ascelibrary.org/doi/abs/10.1061/(ASCE)BE.1943-5592.0001199" ><span style="color: #FCB425;"><i class="ai ai-doi ai-2x"></i></span></a>
-
-											</p>
-										</article>
+										</div>
+										
+										<div class="col-12 text-center mt-5">
+											<a href="https://scholar.google.com/citations?user=dfhewssAAAAJ&hl=en/" class="btn btn-lg btn-primary" target="_blank">
+												<i class="ai ai-google-scholar me-2"></i> View All Publications
+											</a>
+										</div>
+									</div>
 									</div>
 								</section>
 
 						</div>
 					</div>
 
-				<!-- Sidebar -->
+				<!-- Sidebar with modern styling -->
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Search -->
-
-							<!-- Menu -->
+						<!-- Menu with enhanced styling -->
 								<nav id="menu">
 									<header class="major">
-										<h2>Menu</h2>
+								<h2 class="section-title">Menu</h2>
 									</header>
-									<ul>
-										<li><a href="#">Home</a></li>
-										<li><a href="#">CV</a></li>
-										<li><a href="./publications/">Publications</a></li>
-										<li>
+							<ul class="nav flex-column">
+								<li class="nav-item mb-2"><a href="#" class="active">Home</a></li>
+								<li class="nav-item mb-2"><a href="#">CV</a></li>
+								<li class="nav-item mb-2"><a href="./publications/">Publications</a></li>
+								<li class="nav-item dropdown mb-2">
 											<span class="opener">Research</span>
-											<ul>
-												<li><a href="#">Machine Learning</a></li>
-												<li><a href="#">Reinforcement Learning</a></li>
-												<li><a href="#">Structural Health Monitoring</a></li>
-												<li><a href="#">Structural Dynamics & Vibration Control</a></li>
-												<li><a href="#">Finite Element Simulation</a></li>
-												<li><a href="#">Optimization</a></li>
+									<ul class="mt-2">
+										<li class="mb-2"><a href="#">Machine Learning</a></li>
+										<li class="mb-2"><a href="#">Reinforcement Learning</a></li>
+										<li class="mb-2"><a href="#">Structural Health Monitoring</a></li>
+										<li class="mb-2"><a href="#">Structural Dynamics & Vibration Control</a></li>
+										<li class="mb-2"><a href="#">Finite Element Simulation</a></li>
+										<li class="mb-2"><a href="#">Optimization</a></li>
 											</ul>
 										</li>
-<!-- 										<li>
-											<span class="opener">Teaching</span>
-											<ul>
-												<li><a href="#">Python</a></li>
-												<li><a href="#">Opensees</a></li>
-												<li><a href="#">Structural Dynamics & Control</a></li>
-												<li><a href="#">Bridge Simulations</a></li>
-												<li><a href="#">Optimization</a></li>
-											</ul>
-										</li>
-
-										<li><a href="#">Collaborations</a></li> -->
 									</ul>
 								</nav>
 
-
-							<!-- Section -->
-
-							<!-- Section -->
+						<!-- Contact Section with enhanced styling -->
 								<section>
 									<header class="major">
-										<h2>Get in touch</h2>
+								<h2 class="section-title">Get in touch</h2>
 									</header>
 
 									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="mailto:mohsen.azimi at ubc.ca?Subject=Hi%20Mohsen!">mohsen.azimi<i class="fas fa-at"></i>ubc.ca</a></li>
-										<li class="icon solid fa-map-marker-alt">CEME 1201, University of Britisch Columbia<br />
-										Vancouver, BC, Canada</li></ul>
+								<li class="mb-3 d-flex align-items-center">
+									<i class="icon solid fa-envelope me-3 text-primary"></i>
+									<a href="mailto:mohsen.azimi@ubc.ca?Subject=Hi%20Mohsen!">mohsen.azimi@ubc.ca</a>
+								</li>
+								<li class="d-flex">
+									<i class="icon solid fa-map-marker-alt me-3 text-primary"></i>
+									<div>
+										University of British Columbia<br />
+										Vancouver, BC, Canada
+									</div>
+								</li>
+							</ul>
 								</section>
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p ="copyright">&copy; Mohsen Azimi. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-
-
-									<!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=159ee3&w=a&t=n&d=LIDReeZLnRwLFgYxFn_Z69vrr_b4UwMEJAde5Uo1PFY&co=f5f6f8&cmo=0084c6&cmn=00a3f4'></script> -->
+							<p class="copyright">&copy; <span id="currentYear"></span> Mohsen Azimi. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 								</footer>
 
 						</div>
@@ -301,6 +957,220 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<!-- Modern JS Libraries -->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+			<script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+			
+			<!-- Custom Scripts with advanced features -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					// Initialize AOS animations
+					AOS.init({
+						duration: 800,
+						once: true,
+						mirror: false
+					});
+					
+					// Initialize tooltips
+					tippy('[data-tippy-content]', {
+						placement: 'bottom',
+						arrow: true,
+						animation: 'scale',
+						theme: 'light'
+					});
+					
+					// Set current year in footer
+					document.getElementById('currentYear').textContent = new Date().getFullYear();
+					
+					// Smooth scrolling for anchor links
+					document.querySelectorAll('.scroll-to').forEach(anchor => {
+						anchor.addEventListener('click', function(e) {
+							e.preventDefault();
+							const targetId = this.getAttribute('href');
+							document.querySelector(targetId).scrollIntoView({
+								behavior: 'smooth'
+							});
+						});
+					});
+					
+					// Header scroll effect
+					const header = document.getElementById('header');
+					const scrollToTopBtn = document.getElementById('scrollToTop');
+					
+					window.addEventListener('scroll', function() {
+						if (window.scrollY > 50) {
+							document.body.classList.add('scrolled');
+							
+							// Show scroll to top button
+							scrollToTopBtn.classList.add('show');
+						} else {
+							document.body.classList.remove('scrolled');
+							
+							// Hide scroll to top button
+							scrollToTopBtn.classList.remove('show');
+						}
+					});
+					
+					// Scroll to top functionality
+					scrollToTopBtn.addEventListener('click', function() {
+						window.scrollTo({
+							top: 0,
+							behavior: 'smooth'
+						});
+					});
+					
+					// Initialize Particles.js background
+					initParticles();
+					
+					function initParticles() {
+						// Create particles canvas if it doesn't exist
+						if (!document.getElementById('particles-js')) {
+							const particlesContainer = document.createElement('div');
+							particlesContainer.id = 'particles-js';
+							particlesContainer.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1;';
+							document.body.prepend(particlesContainer);
+						}
+						
+						// Initialize particles with optimized settings for better performance
+						particlesJS('particles-js', {
+							"particles": {
+								"number": {
+									"value": 40,
+									"density": {
+										"enable": true,
+										"value_area": 800
+									}
+								},
+								"color": {
+									"value": "#2563eb"
+								},
+								"shape": {
+									"type": "circle",
+									"stroke": {
+										"width": 0,
+										"color": "#000000"
+									}
+								},
+								"opacity": {
+									"value": 0.2,
+									"random": true,
+									"anim": {
+										"enable": true,
+										"speed": 0.5,
+										"opacity_min": 0.1,
+										"sync": false
+									}
+								},
+								"size": {
+									"value": 3,
+									"random": true
+								},
+								"line_linked": {
+									"enable": true,
+									"distance": 150,
+									"color": "#2563eb",
+									"opacity": 0.15,
+									"width": 1
+								},
+								"move": {
+									"enable": true,
+									"speed": 0.8,
+									"direction": "none",
+									"random": false,
+									"straight": false,
+									"out_mode": "out",
+									"bounce": false,
+									"attract": {
+										"enable": false,
+										"rotateX": 600,
+										"rotateY": 1200
+									}
+								}
+							},
+							"interactivity": {
+								"detect_on": "canvas",
+								"events": {
+									"onhover": {
+										"enable": true,
+										"mode": "grab"
+									},
+									"onclick": {
+										"enable": true,
+										"mode": "push"
+									},
+									"resize": true
+								},
+								"modes": {
+									"grab": {
+										"distance": 140,
+										"line_linked": {
+											"opacity": 0.3
+										}
+									},
+									"push": {
+										"particles_nb": 3
+									}
+								}
+							},
+							"retina_detect": true
+						});
+					}
+					
+					// Intersection Observer for revealing elements as they enter the viewport
+					const revealElements = document.querySelectorAll('.modern-card, .section-title');
+					const revealOptions = {
+						threshold: 0.1,
+						rootMargin: '0px 0px -50px 0px'
+					};
+					
+					const revealObserver = new IntersectionObserver((entries, observer) => {
+						entries.forEach(entry => {
+							if (entry.isIntersecting) {
+								entry.target.classList.add('fade-in');
+								observer.unobserve(entry.target);
+							}
+						});
+					}, revealOptions);
+					
+					revealElements.forEach(element => {
+						revealObserver.observe(element);
+					});
+					
+					// Font optimization
+					if ('fonts' in document) {
+						// Preload critical fonts
+						Promise.all([
+							document.fonts.load('1em Source Sans Pro'),
+							document.fonts.load('1em Montserrat')
+						]).then(() => {
+							document.documentElement.classList.add('fonts-loaded');
+						});
+					}
+					
+					// Lazy load non-critical images
+					if ('IntersectionObserver' in window) {
+						const lazyImages = document.querySelectorAll('img[data-src]');
+						const imageObserver = new IntersectionObserver((entries) => {
+							entries.forEach(entry => {
+								if (entry.isIntersecting) {
+									const img = entry.target;
+									img.src = img.dataset.src;
+									img.removeAttribute('data-src');
+									imageObserver.unobserve(img);
+								}
+							});
+						});
+						
+						lazyImages.forEach(img => {
+							imageObserver.observe(img);
+						});
+					}
+				});
+			</script>
 
 	</body>
 </html>
